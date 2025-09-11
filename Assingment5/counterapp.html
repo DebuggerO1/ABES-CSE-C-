@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f0f0f0;
+    }
+
+    .counter-container {
+      background-color:grey;
+      display: inline-block;
+      padding: 30px 50px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .counter-value {
+      font-size: 48px;
+      margin: 20px 0;
+      color: #333;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 24px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .increment {
+      background-color: #4CAF50;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    }
+
+    .increment:hover {
+      background-color: #45a049;
+    }
+
+    .decrement {
+      background-color: #f44336;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .decrement:hover {
+      background-color: #da190b;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="counter-container">
+    <div class =" image"><img src="counterlogo.jpeg" height="80px" width="100px" alt="brand logo">
+    <h1>Counter App</h1>
+    </div>
+    <div class="counter-value" id="counter">0</div>
+    <button class="decrement" onclick="decrease()">–</button>
+    <button class="increment" onclick="increase()">+</button>
+  </div>
+
+  <script>
+    let count = 0;
+
+    function updateDisplay() {
+      document.getElementById("counter").innerText = count;
+    }
+
+    function increase() {
+      if (count < 10) {
+        count++;
+        updateDisplay();
+      } else {
+        alert("Maximum limit reached (10)");
+      }
+    }
+
+    function decrease() {
+      if (count > 0) {
+        count--;
+        updateDisplay();
+      } else {
+        alert("Minimum limit reached (0)");
+      }
+    }
+  </script>
+
+</body>
+</html>
