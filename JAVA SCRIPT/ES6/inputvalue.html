@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-9</title>
+</head>
+<body>
+    <input type = "text" name="ab" id="sr">
+    <button onclick="displayText()">CLICK</button>
+    <p id="output"></p>
+    <script>
+        let displayText = () =>{
+          const inpuText = document.getElementById("sr").value;
+          document.getElementById("output").innerHTML= inpuText; 
+        }
+    </script>
+</body>
+</html>
