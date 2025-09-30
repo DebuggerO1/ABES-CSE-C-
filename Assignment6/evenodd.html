@@ -1,0 +1,39 @@
+<script>
+  var firstnum = Number(prompt("Enter 1st number : "));
+  var secondnum = Number(prompt("Enter 2nd number : "));
+
+  let arr1 = [];
+
+  // first number
+  for (let i = 1; i <= 10; i++) {
+    let val = i * firstnum;
+    arr1.push(i * firstnum);
+    document.write(val,"<br>");
+
+  }
+document.write("<br><br>")
+  // second number
+  for (let i = 1; i <= 10; i++) {
+    let val = i*secondnum;
+    document.write(val,"<br>");
+    arr1.push(i * secondnum);
+    document.write(val,"<br>");
+  }
+
+  // remove duplicates
+  arr1 = [...new Set(arr1)];
+
+  document.write("Even numbers:<br>");
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] % 2 === 0) {
+      document.write(arr1[i], "<br>");
+    }
+  }
+
+  document.write("<br>Odd numbers:<br>");
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] % 2 !== 0) {
+      document.write(arr1[i], "<br>");
+    }
+  }
+</script>
