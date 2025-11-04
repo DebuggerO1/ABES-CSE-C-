@@ -1,21 +1,37 @@
-.book{
-    border: 2px solid black;
-    width: 300px;
-    padding: 10px;
+.book {
+  border: 2px solid #eee;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display : inline-block;
+  border-color: chocolate;
     margin: 10px;
-    text-align: center;
-    box-shadow: 5px 5px 10px grey;
-    display: inline-block;
+   align-content: center;
 }
-button{
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+.book:hover {
+  transform: scale(1.03);
 }
-img{
-    width: 200px;
-    height: 250px;
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.book img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;   /* optional */
 }
