@@ -1,0 +1,21 @@
+.book{
+    border: 2px solid black;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 10px grey;
+    display: inline-block;
+}
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+img{
+    width: 200px;
+    height: 250px;
+}

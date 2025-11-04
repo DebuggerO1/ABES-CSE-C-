@@ -7,16 +7,18 @@ import Navbar from './components/Navbar.jsx';
 import Card from './components/Card.jsx';
 import Image from './components/Image.jsx';
 import Button from './components/Button.jsx';
+import {Counter} from './components/counter.jsx';
 
 function App() {
 
   return (
-    <div className="App">
-      <Navbar/>
-      <Card/>
-      <Image/>
-      <Button/>
-    </div>
+    // <div className="App">
+    //   <Navbar/>
+    //   <Card/>
+    //   <Image/>
+    //   <Button/>
+    // </div>
+    <Counter/>
   )
 }
 
