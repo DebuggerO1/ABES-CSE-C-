@@ -1,5 +1,29 @@
 {
   "dependencies": {
-    "react-router-dom": "^7.9.5"
-  }
+    "express": "^5.1.0",
+    "it": "^1.1.1",
+    "react-router-dom": "^7.9.5",
+    "y": "^0.3.2"
+  },
+  "name": "abes(cse-c)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "coffee-script": "^1.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DebuggerO1/ABES-CSE-C-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DebuggerO1/ABES-CSE-C-/issues"
+  },
+  "homepage": "https://github.com/DebuggerO1/ABES-CSE-C-#readme"
 }
